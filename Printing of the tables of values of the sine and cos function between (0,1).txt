@@ -1,0 +1,22 @@
+/*The table of value of sine and cosine function between (0,1) measured in radians by Akinfenwa Gabriel Ayomide)
+*/
+
+
+#include<stdio.h>
+#include<math.h> //calling the math function
+int main(void)
+{ 
+double interval;
+int i;
+printf("The values for sine function and cos functions (in radians) between 0 and 1 are as follows: \n");
+for(i = 0; i <101; i++)
+    {
+    interval = i/100.0;
+     printf("sin( %lf ) = %lf rad \n",interval, (sin(interval)));//The sine function called
+     printf("cos( %lf ) = %lf rad \n", interval, (cos(interval)));//The cosine function called
+    }
+
+
+printf("Done!");
+return 0;
+}
